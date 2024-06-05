@@ -11,11 +11,11 @@ Other files are resources included in the markdown file, such as image files.
 
 ## The markdown file
 
-The markdown file contains the content of the article. Its structure is not strictly defined, and the only mandatory rule is that it must follow the markdown syntax. The markdown file can also reference other resources, both online resources, using their URL, or offline resources, using the relative path of the article's folder. To see more on offline resources, see section the "Other files/resources".
+The markdown file contains the content of the article. Its structure is not strictly defined, and the only mandatory rules is that it must follow the markdown syntax and it must named `article.md`. The markdown file can also reference other resources, both online resources, using their URL, or offline resources, using the relative path of the article's folder. To see more on offline resources, see section the "Other files/resources".
 
 ## The JSON file
 
-The JSON metadata file contains the following properties:
+The JSON metadata file is named `metadata.json` and contains the following properties:
 
 - "title" (mandatory field): A string representing the article's title, case sensitive.
 - "tags" (mandatory field): An array of strings with the article's topics/categories.
