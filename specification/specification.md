@@ -17,6 +17,7 @@ The markdown file contains the content of the article. Its structure is not stri
 The JSON metadata file contains the following properties:
 - "title" (mandatory field): A string representing the article's title, case sensitive.
 - "tags" (mandatory field): An array of strings with the article's topics/categories.
+- "ignoreRelease" (optional field): The article (and the entire folder) will be ignored in the release and no HTML file will be generated.
 - "versions" (field generated and maintained by the system): An array of objects, containing the history of versions of the article. To see details about the version object, check the "The version object" section.
 
 ## Other files/resources
