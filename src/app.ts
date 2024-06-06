@@ -16,10 +16,13 @@ function readArticles(): void {
   const articles = getListOfArticles();
 
   articles.forEach((article) => {
-    const articleContent = fs.readFileSync(`./articles/${article}/article.md`, {
-      encoding: "utf-8",
-      flag: "r",
-    });
+    const articleContent = fs.readFileSync(
+      `${config.sourcePath}/${article}/article.md`,
+      {
+        encoding: "utf-8",
+        flag: "r",
+      }
+    );
     console.log(articleContent);
   });
 }
