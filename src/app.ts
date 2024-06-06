@@ -1,9 +1,15 @@
 import fs from "fs";
 
-function getListOfArticles(): string[] {
-  const articlesFolder = "./articles";
+const configPath = "./articlesConfig.json";
+const configContent = fs.readFileSync(configPath, {
+  encoding: "utf-8",
+  flag: "r",
+});
 
-  return fs.readdirSync(articlesFolder);
+const config = JSON.parse(configContent);
+
+function getListOfArticles(): string[] {
+  return fs.readdirSync(config.sourcePath);
 }
 
 function readArticles(): void {
