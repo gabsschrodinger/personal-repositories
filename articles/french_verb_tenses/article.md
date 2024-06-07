@@ -8,6 +8,7 @@
 | vouloir (to want)    | (je) veux      | (tu) veux       | (il/elle) veut      |
 | avoir (to have)      | (j') ai        | (tu) as         | (il/elle) a         |
 | aller (to go)        | (je) vais      | (tu) vas        | (il/elle) va        |
+| prendre (to take)    | (je) prends    | (tu) prends     | (il/elle) prend     |
 | manger (to eat)      | (je) mange     | (tu) manges     | (il/elle) mange     |
 | étudier (to study)   | (j') étudie    | (tu) étudies    | (il/elle) étudie    |
 | travailler (to work) | (je) travaille | (tu) travailles | (il/elle) travaille |
@@ -20,6 +21,7 @@
 | vouloir (to want)    | (nous) voulons     | (tu) veux       | (ils/elles) veulent     |
 | avoir (to have)      | (nous) avons       | (tu) as         | (ils/elles) ont         |
 | aller (to go)        | (nous) allons      | (tu) vas        | (ils/elles) vont        |
+| prendre (to take)    | (nous) prenons     | (tu) prenez     | (ils/elles) prennent    |
 | manger (to eat)      | (nous) mangeons    | (tu) manges     | (ils/elles) mangent     |
 | étudier (to study)   | (nous) étudions    | (tu) étudies    | (ils/elles) étudient    |
 | travailler (to work) | (nous) travaillons | (tu) travailles | (ils/elles) travaillent |
