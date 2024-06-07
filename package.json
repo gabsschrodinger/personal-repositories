@@ -4,5 +4,8 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.0"
+  },
+  "dependencies": {
+    "marked": "^12.0.2"
   }
 }

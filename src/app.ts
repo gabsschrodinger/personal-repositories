@@ -1,4 +1,5 @@
 import fs from "fs";
+import { marked } from "marked";
 
 const configPath = "./articlesConfig.json";
 const configContent = fs.readFileSync(configPath, {
@@ -12,6 +13,15 @@ function getListOfArticles(): string[] {
   return fs.readdirSync(config.sourcePath);
 }
 
+function saveHtmlContent(markdown: string, outputPath: string): void {
+  const htmlContent = marked(markdown, { async: false }) as string;
+
+  fs.writeFileSync(outputPath, htmlContent, {
+    encoding: "utf-8",
+    flag: "w",
+  });
+}
+
 function readArticles(): void {
   const articles = getListOfArticles();
 
@@ -23,7 +33,8 @@ function readArticles(): void {
         flag: "r",
       }
     );
-    console.log(articleContent);
+
+    saveHtmlContent(articleContent, `${config.targetPath}/${article}.html`);
   });
 }
 
