@@ -6,6 +6,8 @@ After working mainly with pySpark for several months, I have became quite rusty 
 
 Windowing functions are a feature of the SQL language that allows developers to perform analytical and complex operations over a window, or partition (Masood-Al-Farooq, 2014).
 
+To use windowing functions in SQL, developers must define a window, composed of partition and ordering columns (Masood-Al-Farooq, 2014). To be applied over the window, SQL provides a series of windowing functions, such as `ROW_NUMBER` or `LAG` (Masood-Al-Farooq, 2014).
+
 ## References
 
 Masood-Al-Farooq, B. A. (2014). *Sql server 2014 development essentials*. Packt Publishing, Limited.
