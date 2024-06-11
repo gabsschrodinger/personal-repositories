@@ -15,13 +15,13 @@
 
 ## Present tense (plural)
 
-| Verb                 | First person       | Second person   | Third person            |
-| -------------------- | ------------------ | --------------- | ----------------------- |
-| être (to be)         | (nous) sommes      | (tu) es         | (ils/elles) sont        |
-| vouloir (to want)    | (nous) voulons     | (tu) veux       | (ils/elles) veulent     |
-| avoir (to have)      | (nous) avons       | (tu) as         | (ils/elles) ont         |
-| aller (to go)        | (nous) allons      | (tu) vas        | (ils/elles) vont        |
-| prendre (to take)    | (nous) prenons     | (tu) prenez     | (ils/elles) prennent    |
-| manger (to eat)      | (nous) mangeons    | (tu) manges     | (ils/elles) mangent     |
-| étudier (to study)   | (nous) étudions    | (tu) étudies    | (ils/elles) étudient    |
-| travailler (to work) | (nous) travaillons | (tu) travailles | (ils/elles) travaillent |
+| Verb                 | First person       | Third person            |
+| -------------------- | ------------------ | ----------------------- |
+| être (to be)         | (nous) sommes      | (ils/elles) sont        |
+| vouloir (to want)    | (nous) voulons     | (ils/elles) veulent     |
+| avoir (to have)      | (nous) avons       | (ils/elles) ont         |
+| aller (to go)        | (nous) allons      | (ils/elles) vont        |
+| prendre (to take)    | (nous) prenons     | (ils/elles) prennent    |
+| manger (to eat)      | (nous) mangeons    | (ils/elles) mangent     |
+| étudier (to study)   | (nous) étudions    | (ils/elles) étudient    |
+| travailler (to work) | (nous) travaillons | (ils/elles) travaillent |
