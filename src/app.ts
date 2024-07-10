@@ -1,29 +1,24 @@
 import fs from "fs";
 import { marked } from "marked";
+import markedKatex from "marked-katex-extension";
+import {
+  getBaseHtmlContent,
+  getConfig,
+  getListOfArticles,
+  overwriteCss,
+  saveContent,
+} from "./fsUtils";
 
-const configPath = "./articlesConfig.json";
-const configContent = fs.readFileSync(configPath, {
-  encoding: "utf-8",
-  flag: "r",
-});
+const options = {
+  throwOnError: false,
+};
 
-const config = JSON.parse(configContent);
+marked.use(markedKatex(options));
 
-function getListOfArticles(): string[] {
-  return fs.readdirSync(config.sourcePath);
-}
-
-function saveHtmlContent(markdown: string, outputPath: string): void {
-  const htmlContent = marked(markdown, { async: false }) as string;
-
-  fs.writeFileSync(outputPath, htmlContent, {
-    encoding: "utf-8",
-    flag: "w",
-  });
-}
+const config = getConfig();
 
 function readArticles(): void {
-  const articles = getListOfArticles();
+  const articles = getListOfArticles(config);
 
   articles.forEach((article) => {
     const articleContent = fs.readFileSync(
@@ -34,8 +29,17 @@ function readArticles(): void {
       }
     );
 
-    saveHtmlContent(articleContent, `${config.targetPath}/${article}.html`);
+    const htmlContent = marked(articleContent, { async: false }) as string;
+    const baseHtmlContent = getBaseHtmlContent();
+
+    const finalHtmlContent = baseHtmlContent.replace(
+      "<PageContent/>",
+      htmlContent
+    );
+    saveContent(finalHtmlContent, `${config.targetPath}/${article}.html`);
   });
+
+  overwriteCss();
 }
 
 readArticles();
