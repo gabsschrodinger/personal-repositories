@@ -1,0 +1,12 @@
+body {
+  background-color: #161b22;
+  color: #e6edf3;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2em;
+  padding: 32px;
+  padding-right: 64px;
+}
+
+.katex-html {
+  display: none;
+}
